@@ -9,16 +9,14 @@ namespace EXAMEN_RECU
 {
     internal class Program
     {
-        public class Recursividad
-        {
-            public static long Factorial(int n)
+            int Factorial(int n)
             {
                 if (n == 1)
                     return 1;
                 return n * Factorial(n - 1);
             }
-          
-        }
+        
+
         static void Main(string[] args)
         {
             
@@ -61,7 +59,11 @@ namespace EXAMEN_RECU
             }
             else if (opcion == 5)
             {
-            }
+
+                    Console.WriteLine("Introduce un número entero: ");
+                    int num = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine($"El factorial de {num} es: {Factorial(num)}");
+                }
                 else if (opcion == 6)
             {
                 Console.WriteLine("SALIENDO DEL PROGRAMA");
