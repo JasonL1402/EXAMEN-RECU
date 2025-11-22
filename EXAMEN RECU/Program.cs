@@ -17,6 +17,7 @@ namespace EXAMEN_RECU
                     return 1;
                 return n * Factorial(n - 1);
             }
+          
         }
         static void Main(string[] args)
         {
@@ -60,10 +61,7 @@ namespace EXAMEN_RECU
             }
             else if (opcion == 5)
             {
-                    Console.WriteLine("Introduce un número entero: ");
-                    int num = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("EL FACTORIAL ES DE"+num);
-                }
+            }
                 else if (opcion == 6)
             {
                 Console.WriteLine("SALIENDO DEL PROGRAMA");
