@@ -70,7 +70,7 @@ namespace EXAMEN_RECU
                 return;
             }
                 Console.WriteLine("¿DESEA REALIZAR OTRA OPERACIÓN? S/N");
-                
+                continuar = Console.ReadLine();
             } while (continuar == "S" && continuar == "s");
         }
     }
