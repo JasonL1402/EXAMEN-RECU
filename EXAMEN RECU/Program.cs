@@ -58,7 +58,7 @@ namespace EXAMEN_RECU
                     Console.WriteLine("Introduce un número entero: ");
                     int Factorial(int n)
                     {
-                        if (n == 1)
+                        if (n == 1 || n == 0)
                             return 1;
                         return n * Factorial(n - 1);
                     }
