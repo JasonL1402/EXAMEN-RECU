@@ -9,12 +9,7 @@ namespace EXAMEN_RECU
 {
     internal class Program
     {
-            int Factorial(int n)
-            {
-                if (n == 1)
-                    return 1;
-                return n * Factorial(n - 1);
-            }
+            
         
 
         static void Main(string[] args)
@@ -61,8 +56,13 @@ namespace EXAMEN_RECU
             {
 
                     Console.WriteLine("Introduce un número entero: ");
-                    int num = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine($"El factorial de {num} es: {Factorial(num)}");
+                    int Factorial(int n)
+                    {
+                        if (n == 1)
+                            return 1;
+                        return n * Factorial(n - 1);
+                    }
+
                 }
                 else if (opcion == 6)
             {
